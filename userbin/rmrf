@@ -1,3 +1,9 @@
 #!/usr/bin/bash
 
-mv $1 ~/.tmp
+for arg in $@
+do
+    cp -R $arg ~/.tmp
+    rm -rf $arg
+    echo "throw " $arg " into trash"
+done
+
