@@ -40,6 +40,7 @@ def install():	# install some comm soft
 		print "is CentOS"
 	comm = "yum install " if system_ else "apt-get install "
 	print comm
+	bash(comm + 'net-tools')
 	bash(comm + 'vim')
 	bash(comm + 'git')
 	bash(comm + 'gcc')
@@ -47,8 +48,8 @@ def install():	# install some comm soft
 
 def vim_conf(): # confiure the vim
 	bash('git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim')
-	bash('cp ./vim/bashrc ~/.vimrc')	# copy .vimrc to root directory
-	bash('vim -c PluginInstall')		# install plugin
+	bash('cp ./vim/bashrc ~/.vimrc')	# copy '.vimrc' to root directory
+	bash('vim -c PluginInstall')		# install vim's plugin
 
 def main():
 	setSysName()

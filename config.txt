@@ -1,0 +1,4 @@
+# 这个文件用来确定要安装那些软件
+mysql=no
+apache=no
+php=no
