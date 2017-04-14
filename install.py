@@ -6,6 +6,7 @@ system_ = True
 
 def setSysName():		# set this system is CentOS or Ubuntu
 	# default is CentOS
+	global system_
 	while True:
 		sysName = raw_input("Input you system name(CentOS or Ubuntu):")
 		sysName = sysName.upper()
