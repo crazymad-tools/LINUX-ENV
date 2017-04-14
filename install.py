@@ -53,6 +53,6 @@ def vim_conf(): # confiure the vim
 def main():
 	setSysName()
 	install()
-	vim_conf()
+	#vim_conf()
 
-main()
+main()			
